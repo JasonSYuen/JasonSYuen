@@ -7,13 +7,17 @@
     <title>JY_TESTING</title>
 
     <style>
-        div.top {
+        html,
+        body {
+            height: 100%;
+        }
+
+        #top {
             background-color: beige;
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
             height: auto;
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            left: 0px;
             height: 100px;
             padding-left: 20px;
             font-size: 80px;
@@ -22,15 +26,105 @@
             font-style: oblique;
 
         }
+
+        #nav_bar {
+
+            margin-top: -10px;
+            margin-left: -10px;
+            margin-right: -10px;
+
+            height: auto;
+            background-color: gray;
+            font-size: 20px;
+            left: 0px;
+            right: 0px;
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin: 10px;
+            }
+
+            li {
+                display: inline;
+                margin-right: 100px;
+            }
+        }
+
+        #left {
+            position: absolute;
+            background-color: brown;
+            margin-top: -10px;
+            height: 100%;
+            width: 30%;
+            left: 0px;
+
+            #myPhoto {
+                width: 50%;
+                height: 250px;
+                margin-left: 25%;
+                margin-right: 75px;
+                margin-top: 50px;
+                object-position: bottom;
+                object-fit: cover;
+
+
+
+            }
+
+            p.contact {
+                color: white;
+                margin-left: 75px;
+                overflow-wrap: break-word;
+            }
+
+        }
+
+        #right {
+            position: absolute;
+            background-color: bisque;
+            margin-top: -10px;
+            height: 100%;
+            width: 70%;
+            right: 0px;
+        }
+
+        p.text {
+            background-color: blue;
+            font-size: 10px;
+
+        }
     </style>
 </head>
 
-<body style="background-color: aquamarine;">
-    <div class="top"> Jason Yuen</div>
-    <hr class="top">
-    <p>
-        A Website to test GITHUB Hosting!
-    </p>
+<body style="background-color: white;">
+    <div id="top"> Jason Yuen</div>
+
+    <div id="nav_bar">
+        <ul>
+            <li> this </li>
+            <li> is </li>
+            <li> list </li>
+        </ul>
+    </div>
+
+    <div>
+        <div id="left">
+            <img src="image/IMG_5113.jpeg" alt="Image Not Loaded" id="myPhoto">
+            <p class="contact"> Email: Js99168@icloud.com</p>
+            <p class="contact"> GitHub: https://github.com/JasonSYuen</p>
+        </div>
+
+        <div id="right">
+
+            <p> HELLO WORLD </p>
+            <P> Testing GITHUB WEBHOSTING</P>
+        </div>
+
+    </div>
+
+
+
 
 </body>
 
